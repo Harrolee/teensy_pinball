@@ -1,3 +1,21 @@
+
+```mermaid
+graph TD;
+    rPi-- uart* ---Teensy;
+    rPi-->LCD_display
+    Teensy-- serial ---FH[/Fast Board\]
+    FH --> motors
+    UserInput-- digital gpio-->Teensy
+    20_Switches-- digital gpio -->Teensy
+    4_AutostopSwitches-- digital gpio-->Teensy
+```
+
+-* Steve suggests a 'no-modem' network via uart
+
+* ?-Why a Teensy and an rPi?
+* A-Teensy has 40 gpio pins and rPi has libraries for displaying visuals
+
+
 # a Teensy Pinball Guide
 
 ### Upon aquiring your Teensy 4.1, follow these tutorials:
