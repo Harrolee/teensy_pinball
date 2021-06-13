@@ -19,6 +19,8 @@ input:
 * coin door
 
 
+
+
 sending motor output to m_out
 getting user input from u_in: array
     u_in contains joystick_L, joystick_R, start button, coin_door

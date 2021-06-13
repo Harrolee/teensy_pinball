@@ -1,9 +1,9 @@
 
 ```mermaid
 graph TD;
-    rPi-- uart* ---Teensy;
+    rPi-- serial ---Teensy;
     rPi-->LCD_display
-    Teensy-- serial ---FH[/Fast Board\]
+    Teensy-- dreams? Analog gpio? ---FH[/Wizardry?\]
     FH --> motors
     UserInput-- digital gpio-->Teensy
     20_Switches-- digital gpio -->Teensy
